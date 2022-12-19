@@ -8,7 +8,24 @@
 
 ## Source Code
 ```
+#include <iostream>
+using namespace std;
 
+int main()
+{
+	int awal,akhir;
+	cout << "Masukan Angka Awal= ";;
+	cin >> awal;
+	cout << "Masukan Angka Akhir= ";
+	cin >> akhir; 
+	
+    for (int i = awal; i <=akhir; i++) {
+        if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
+            cout << i << endl;
+        }
+    }
+    return 0;
+}
 ```
 ## Output
 
