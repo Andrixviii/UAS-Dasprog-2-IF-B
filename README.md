@@ -53,5 +53,5 @@ int main()
 ```
 ## Output
 
-<img src="output1.3.png">
+<img src="output1.2.png">
 
