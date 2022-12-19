@@ -19,18 +19,36 @@ using namespace std;
 
 int main()
 {
-	int awal,akhir;
-	cout << "Masukan Angka Awal= ";;
-	cin >> awal;
-	cout << "Masukan Angka Akhir= ";
-	cin >> akhir; 
+ int e1,e2;
+ cout << "Masukan Elemant ke-1= ";
+ cin >> e1;
+ cout << "Masukan Elemant ke-2= ";
+ cin >> e2;
 	
-    for (int i = awal; i <=akhir; i++) {
-        if (i % 3 == 0 || i % 5 == 0 || i % 7 == 0) {
-            cout << i << endl;
-        }
-    }
-    return 0;
+ cout << "\n";
+ int arr[e1][e2], baris, kolom;
+ 
+ cout << "baris: "; cin >> baris;
+ cout << "kolom: "; cin >> kolom;
+ 
+ cout << "\n";
+ for(int i=0; i<baris; i++){
+  for(int j=0; j<kolom; j++){
+   cout << "["<<i<<j<<"]: ";
+   	cin >> arr[i][j];
+  }
+ }
+ 
+ cout << "\n";
+ 
+ for(int i=0; i<baris; i++){
+  for(int j=0; j<kolom; j++){
+  	if(arr [i][j]%3==0 || arr [i][j]%5==0 || arr [i][j]%7==0){
+  		cout << arr[i][j] << endl;
+	  }
+   }
+ }
+  return 0;
 }
 ```
 ## Output
